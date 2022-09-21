@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technovert</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="scaffold">
+      <div class="top">
+        <p id="heading">TECHNOVERT</p>
+      </div>
+      <ul class="bar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#news">SERVICES</a></li>
+        <li><a href="carrers.html">CAREERS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+        <li></li>
+        <li class="icon">
+          <img class="icon" src="blog-icon.png" alt="Blog Icon" />
+        </li>
+      </ul>
+    </div>
+
+    <div class="body">
+      <p class="careersHeading">Contact Us</p>
+      <br />
+
+      <form action="" id="contactForm">
+        <div class="container">
+          <span class="formElement asterisk" id="error"></span>
+          <div class="formElement">
+            <label for="">My Name:</label>
+            <input class="contactTextField" type="text" name="" id="name" />
+            <p class="asterisk nameError" id="myname">*</p>
+          </div>
+
+          <div class="formElement">
+            <label for="">My Email Address:</label>
+            <input class="contactTextField" type="email" name="" id="email" />
+            <p class="asterisk emailError">*</p>
+          </div>
+
+          <div class="formElement">
+            <label for="">My Telephone Number:</label>
+            <input class="contactTextField" type="text" name="" id="" />
+          </div>
+
+          <div class="formElement">
+            <label for="">My Organization Name:</label>
+            <input
+              class="contactTextField organizationError"
+              type="text"
+              name=""
+              id="organizationName"
+            />
+            <p class="asterisk">*</p>
+          </div>
+
+          <div class="formElement">
+            <label for="">My City:</label>
+            <input class="contactTextField" type="text" name="" id="" />
+          </div>
+          <br />
+          <div class="formElement">
+            <label for="">My State or Province:</label>
+            <select
+              name="Select State or Province"
+              class="stateDropdown"
+              id="stateDropdown"
+              onchange="setPromotion(this.value)"
+            >
+              <option value="select">Select State or Province</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Telangana">Telangana</option>
+            </select>
+          </div>
+          <br />
+          <div class="formElement">
+            <label for="">Please Contact Me By:</label>
+            <div class="radiobuttonColumn">
+              <div class="radiobuttonRow">
+                <input type="radio" name="contactme" value="Email" id="email" />
+                <label for="email">Email</label><br />
+              </div>
+              <div>
+                <input type="radio" name="contactme" value="Phone" />
+                <label for="phone">Phone</label><br />
+              </div>
+              <div>
+                <input type="radio" name="contactme" value="Both" />
+                <label for="both">Both</label>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="formElement">
+            <label for="">Gender:</label>
+            <div class="radiobuttonColumn">
+              <div class="radiobuttonRow">
+                <input type="radio" name="gender" value="male" id="gender" />
+                <label for="male">Male</label><br />
+              </div>
+              <div>
+                <input type="radio" name="gender" value="female" id="gender" />
+                <label for="female">Female</label><br />
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="formElement">
+            <label for="">Promotion Code:</label>
+            <input
+              class="contactTextField"
+              type="text"
+              name=""
+              id="promotion"
+            />
+          </div>
+          <br />
+          <div class="formElement">
+            <label for="">Optional Information</label>
+          </div>
+          <p class="optionalInfo">
+            This information is optional but it help us to serve you better.
+          </p>
+          <br />
+          <div class="formElement">
+            <label for="">My Website Adress is:</label>
+            <input class="contactTextField" type="text" name="" id="" />
+          </div>
+          <br />
+          <div class="formElement">
+            <p>Tell Us More About Your Organization:</p>
+          </div>
+          <div class="formElement">
+            <textarea name="aboutOrg" rows="7" cols="33"></textarea>
+          </div>
+          <br />
+          <div class="formElement">
+            <p>What I'd really like to know is:</p>
+          </div>
+          <div class="formElement">
+            <textarea name="userLikes" rows="7" cols="33"></textarea>
+          </div>
+          <br />
+          <div class="formElement">
+            <button class="contactButton" id="send">Send Message</button>
+            <button class="contactButton" id="clear">Clear Form</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
